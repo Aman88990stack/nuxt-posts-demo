@@ -1,15 +1,17 @@
-<!-- pages/index.vue -->
-<script setup lang="ts">
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
-
-// when component loads, redirect to /posts
-router.replace('/posts')
-</script>
-
 <template>
-  <div class="flex items-center justify-center h-screen text-gray-500">
-    Redirecting to posts...
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Posts</h1>
+    <div class="grid gap-4 md:grid-cols-2">
+      <PostCard v-for="p in posts" :key="p.id" :post="p" />
+    </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { usePostsStore } from '@/stores/usePosts';
+import PostCard from '@/components/PostCard.vue';
+
+const store = usePostsStore();
+await store.fetchAll();
+const posts = computed(() => store.list);
+</script>
