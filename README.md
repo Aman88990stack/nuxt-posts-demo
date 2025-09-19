@@ -84,5 +84,5 @@ It includes:
 - Reusable `PostCard` component
 - Dynamic routes for single post view
 - 15-minute server cache
-- TailwindCSS styling
+- TailwindCSS styling.
 
