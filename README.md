@@ -73,3 +73,16 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+# Nuxt Posts Demo
+
+[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://<your-vercel-app>.vercel.app)
+
+This is my Nuxt.js demo project for the Webreinvent technical test.  
+It includes:
+- Posts listing page with Pinia store
+- Reusable `PostCard` component
+- Dynamic routes for single post view
+- 15-minute server cache
+- TailwindCSS styling
+
