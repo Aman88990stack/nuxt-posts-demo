@@ -76,7 +76,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 # Nuxt Posts Demo
 
-[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://<your-vercel-app>.vercel.app)
+[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://nuxt-posts-demo.vercel.app/)
 
 This is my Nuxt.js demo project for the Webreinvent technical test.  
 It includes:
